@@ -1,0 +1,48 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Put your description here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2F3AB2" /> 
+    <title>Anime Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="https://cdn.glitch.com/69876478-b90a-46a4-8227-8da0084c65fe%2Ffavicon%20(1).ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Weather PWA" />
+    <link rel="apple-touch-icon" href="/images/apple-icon-152x152.png" />
+  </head>
+  
+  <body>
+  <div class="topnav">
+  <a class="active" onclick="redo()" href="#home">ホーム </a>
+  <input type="text" id="input" aria-label="text"/>
+  <button id="button" onclick="search()">Search</button>
+    <div class="header"><button id="butInstall" aria-label="Install" hidden></button></div>
+</div>
+  <div id="foo"></div>
+
+
+    <div id="content">
+      <div id="pic"></div>
+    </div>
+
+    
+    <script src="client.js"></script>
+    <script src="addserviceworker.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="install.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
